@@ -1,10 +1,11 @@
 # Managed doom Blazor
 
+- [Demo](https://yostane.github.io/MangedDoom-Blazor/)
+- [Presentation slides](https://yostane.github.io/MangedDoom-Blazor/slides)
+
 ![Logo](./media/logo.jpg)
 
-This is a quick port of Blazor Wasm port of [Managed Doom](https://github.com/sinshu/managed-doom)
-
-You can try it here: [demo](https://yostane.github.io/MangedDoom-Blazor/)
+This is a port of [Managed Doom version 1](https://github.com/sinshu/managed-doom) to the browser
 
 ## Running the webapp locally
 
