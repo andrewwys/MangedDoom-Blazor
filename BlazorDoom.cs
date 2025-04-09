@@ -19,10 +19,7 @@ namespace BlazorDoom
       {
         return;
       }
-      //var watch = System.Diagnostics.Stopwatch.StartNew();
       app.Run(downKeys, upKeys);
-      //watch.Stop();
-      //Console.WriteLine($"fps {1000 / (float)(watch.ElapsedMilliseconds)}", );
     }
 
     [JSImport("getBaseUrl", "main.js")]
@@ -34,7 +31,6 @@ namespace BlazorDoom
       Console.WriteLine("Loading assets");
       string wadUrl = $"{getBaseUrl()}wad/{wadName}.wad";
       string soundFontUrl = $"{getBaseUrl()}sf2/{soundFont}.sf2";
-      // string soundFontUrl = "http://localhost:5000/Roland_SC-55_v3.7.sf2";
       string[] args = { };
       string[] configLines = { };
       var http = new HttpClient();
@@ -50,7 +46,6 @@ namespace BlazorDoom
 
     public static async Task Main()
     {
-
       if (!OperatingSystem.IsBrowser())
       {
         throw new PlatformNotSupportedException("This demo is expected to run on browser platform");
