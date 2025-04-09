@@ -2837,7 +2837,12 @@ body > *:not(.reveal) {
 }
 html,
 #container {
-  background-color: #f0f1f2;
+  background-color: rgb(201, 113, 80);
+  background-image: radial-gradient(
+    circle farthest-corner at center,
+    #d59177 0%,
+    #c97150 100%
+  );
 }
 html.spa,
 html.deck-dashboard {

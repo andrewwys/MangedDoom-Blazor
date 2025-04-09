@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>reveal.js</title>
+  <title>[Fork It! Tunis 2025] How I Ported Doom to the Browser with WebAssembly</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -1140,7 +1140,7 @@
                   allow="fullscreen; autoplay; accelerometer; geolocation; gyroscope; camera; encrypted-media; microphone; midi"
                   data-preload="true"
                   sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation"
-                  data-lazy-loaded="" data-src="https://www.youtube.com/embed/OHu0GpczOT8?enablejsapi=1"></iframe></div>
+                  data-lazy-loaded="" data-src="https://www.youtube.com/embed/OHu0GpczOT8"></iframe></div>
             </div>
           </section>
           <section data-id="504ec7fde968edc7656712384b7e1640">
@@ -4205,18 +4205,6 @@
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
             <div class="sl-block" data-block-type="image"
               style="width: 250.097px; height: 250.097px; left: 1029.9px; top: 211.704px; min-width: 1px; min-height: 1px;"
               data-name="image-83b8a3" data-block-id="9583c7c019c3ff06a227fe24fe9c28d0">
@@ -4272,6 +4260,13 @@
       backgroundTransition: "fade",
       center: false
     });
+
+    setTimeout(() => {
+      const elements = document.querySelectorAll(".pdf-page");
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.background = null;
+      }
+    }, 1000);
   </script>
 </body>
 
