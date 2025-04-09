@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>reveal.js</title>
+  <title>[DevoxxUK 2024] Using WASM to port games to the browser: the BlazorDoom use case</title>
 
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
@@ -4882,7 +4882,24 @@ function setSinglePixel(imageData, dataIndex, colors, colorIndex) {
       backgroundTransition: "fade",
       center: false
     });
+
+
+    setTimeout(() => {
+      const elements = document.querySelectorAll(".pdf-page");
+      for (let i = 0; i < elements.length; i++) {
+        elements[i].style.background = null;
+      }
+    }, 1000);
   </script>
+  <style>
+    html,
+    #container {
+      background-color: rgb(201, 113, 80);
+      background-image: radial-gradient(circle farthest-corner at center,
+          #d59177 0%,
+          #c97150 100%);
+    }
+  </style>
 </body>
 
 </html>
