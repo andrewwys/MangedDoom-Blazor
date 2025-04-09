@@ -19,18 +19,29 @@ using System;
 
 namespace ManagedDoom
 {
-    public sealed class DoomEvent
+  public sealed class DoomEvent
+  {
+    private EventType type;
+    private DoomKey key;
+
+    public DoomEvent(EventType type, DoomKey key)
     {
-        private EventType type;
-        private DoomKey key;
-
-        public DoomEvent(EventType type, DoomKey key)
-        {
-            this.type = type;
-            this.key = key;
-        }
-
-        public EventType Type => type;
-        public DoomKey Key => key;
+      this.type = type;
+      this.key = key;
     }
+
+    public EventType Type => type;
+    public DoomKey Key => key;
+
+    // override object.Equals
+    public override bool Equals(object obj)
+    {
+      if (obj == null || !(obj is DoomEvent))
+      {
+        return false;
+      }
+      DoomEvent de = (DoomEvent)obj;
+      return de.Type == this.Type && de.Key == this.Key;
+    }
+  }
 }
