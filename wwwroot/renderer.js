@@ -4,7 +4,7 @@
  * @param {number[]} colors: unit array
  */
 export function renderWithColorsAndScreenDataUnmarshalled(screenData, colors) {
-  DebugTools.showPalette(colors);
+  colors = DebugTools.showPalette(colors);
   const width = 320;
   const height = 200;
   const canvas = document.getElementById("canvas");
