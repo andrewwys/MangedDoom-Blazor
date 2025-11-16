@@ -1,4 +1,4 @@
-﻿//
+//
 // Copyright (C) 1993-1996 Id Software, Inc.
 // Copyright (C) 2019-2020 Nobuaki Tanaka
 //
@@ -70,12 +70,14 @@ namespace ManagedDoom
             key_strafeleft = new KeyBinding(
                 new DoomKey[]
                 {
-                    DoomKey.A
+                    DoomKey.A,
+                    DoomKey.Comma
                 });
             key_straferight = new KeyBinding(
                 new DoomKey[]
                 {
-                    DoomKey.D
+                    DoomKey.D,
+                    DoomKey.Period
                 });
             key_turnleft = new KeyBinding(
                 new DoomKey[]
